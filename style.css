@@ -75,11 +75,18 @@ body {
   transition: 0.3s;
 }
 .navigation__link img:hover {
-  animation: rotate 2s linear infinite;
+  -webkit-animation: rotate 2s linear infinite;
+          animation: rotate 2s linear infinite;
 }
 
 .active {
   border-bottom: 1px solid #ffffff;
+}
+
+@-webkit-keyframes rotate {
+  from {
+    transform: rotate(-360deg);
+  }
 }
 
 @keyframes rotate {
