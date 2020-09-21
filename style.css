@@ -75,18 +75,11 @@ body {
   transition: 0.3s;
 }
 .navigation__link img:hover {
-  -webkit-animation: rotate 2s linear infinite;
-          animation: rotate 2s linear infinite;
+  animation: rotate 2s linear infinite;
 }
 
 .active {
   border-bottom: 1px solid #ffffff;
-}
-
-@-webkit-keyframes rotate {
-  from {
-    transform: rotate(-360deg);
-  }
 }
 
 @keyframes rotate {
@@ -126,6 +119,12 @@ body {
 }
 .header__social img {
   margin: 0 13px;
+}
+.header__social-link {
+  border-bottom: 1px solid transparent;
+}
+.header__social-link:hover {
+  border-bottom: 1px solid #ffffff;
 }
 
 .rappresent {
@@ -320,9 +319,13 @@ body {
   outline: none;
   border: none;
   letter-spacing: -0.045rem;
+  cursor: pointer;
 }
 .app__btn:nth-of-type(2) {
   margin-left: 15px;
+}
+.app__btn:hover {
+  background-color: #009CC2;
 }
 .app__buttons-wrap {
   margin: 30px 1px 0;
