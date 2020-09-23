@@ -32,6 +32,7 @@ body {
   font-size: 14px;
   font-weight: 700;
   line-height: 16.41px;
+  cursor: pointer;
   letter-spacing: -0.05rem;
 }
 .button:hover {
@@ -75,11 +76,18 @@ body {
   transition: 0.3s;
 }
 .navigation__link img:hover {
-  animation: rotate 2s linear infinite;
+  -webkit-animation: rotate 2s linear infinite;
+          animation: rotate 2s linear infinite;
 }
 
 .active {
   border-bottom: 1px solid #ffffff;
+}
+
+@-webkit-keyframes rotate {
+  from {
+    transform: rotate(-360deg);
+  }
 }
 
 @keyframes rotate {
@@ -151,7 +159,6 @@ body {
   font-weight: 400;
   margin-top: 20px;
   max-width: 504px;
-  letter-spacing: -0.021rem;
 }
 .rappresent__image {
   max-width: 582px;
@@ -183,14 +190,13 @@ body {
   font-size: 16px;
   line-height: 11px;
   font-weight: 500;
-  letter-spacing: 0.12rem;
+  letter-spacing: 0.15rem;
 }
 .community__descr {
   margin-top: 15px;
   font-size: 14px;
   line-height: 20.6px;
   font-weight: 400;
-  letter-spacing: -0.02rem;
 }
 .community__slider {
   overflow: hidden;
@@ -210,10 +216,12 @@ body {
   margin: 0 5px;
 }
 .community__pagination .left {
-  margin-right: 14px;
+  margin-right: 17px;
+  cursor: pointer;
 }
 .community__pagination .right {
   margin-left: 14px;
+  cursor: pointer;
 }
 
 .implement-code {
@@ -243,7 +251,6 @@ body {
   font-size: 14px;
   line-height: 20.6px;
   font-weight: 400;
-  letter-spacing: -0.02rem;
 }
 
 .newsletter {
@@ -306,7 +313,6 @@ body {
   font-size: 14px;
   line-height: 19.6px;
   font-weight: 400;
-  letter-spacing: -0.019rem;
 }
 .app__btn {
   text-transform: uppercase;
